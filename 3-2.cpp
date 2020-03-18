@@ -10,10 +10,10 @@ void Calculator::Init() {
 }
 
 void Calculator::ShowOpCount() {
-	cout << "µ¡¼À: " << Addnum << " »¬¼À: " << Minnum << " °ö¼À: " << Mulnum << " ³ª´°¼À: " << Divnum << endl;
+	cout << "Ä¾Ä„ÅºÅ”: " << Addnum << " Å¥Å¹ÅºÅ”: " << Minnum << " Â°Ã¶ÅºÅ”: " << Mulnum << " Å‚ÅžÂ´Â°ÅºÅ”: " << Divnum << endl;
 }
 
-double Calculator:: Add(double a, double b) {
+double Calculator::Add(double a, double b) {
 	Addnum++;
 	return a + b;
 }
