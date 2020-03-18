@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace COMP_POS {
-	enum {CLERK, SENIOR, ASSIST, MANAGER};
+	enum {CLERK = 1, SENIOR, ASSIST, MANAGER};
 	
 	void ShowGradeInfo(int Grade) {
 		if (Grade == 1) {
