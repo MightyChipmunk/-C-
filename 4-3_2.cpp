@@ -37,7 +37,7 @@ public:
 		strcpy(Comp, comp);
 		strcpy(Call, call);
 	}
-	void ShowNameCardInfo() {
+	void ShowNameCardInfo() const {
 		cout<<"이름: "<<Name<<endl;
 		cout<<"회사: "<<Comp<<endl;
 		cout<<"전화번호: "<<Call<<endl;
