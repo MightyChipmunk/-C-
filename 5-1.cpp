@@ -8,16 +8,16 @@ namespace COMP_POS {
 
 	void ShowGradeInfo(int Grade) {
 		if (Grade == 1) {
-			cout << "Á÷±Þ: »ç¿ø" << endl << endl;
+			cout << "ì§ê¸‰: ì‚¬ì›" << endl << endl;
 		}
 		else if (Grade == 2) {
-			cout << "Á÷±Þ: ÁÖÀÓ" << endl << endl;
+			cout << "ì§ê¸‰: ì£¼ìž„" << endl << endl;
 		}
 		else if (Grade == 3) {
-			cout << "Á÷±Þ: ´ë¸®" << endl << endl;
+			cout << "ì§ê¸‰: ëŒ€ë¦¬" << endl << endl;
 		}
 		else if (Grade == 4) {
-			cout << "Á÷±Þ: °úÀå" << endl << endl;
+			cout << "ì§ê¸‰: ê³¼ìž¥" << endl << endl;
 		}
 		else;
 	}
@@ -30,12 +30,12 @@ class NameCard {
 	int Grade;
 public:
 	NameCard(char* name, char* comp, char* call, int grade) : Grade(grade) {
-		Name = new char[MAX];
-		Comp = new char[MAX];
-		Call = new char[MAX];
-		strcpy_s(Name, MAX, name);
-		strcpy_s(Comp, MAX, comp);
-		strcpy_s(Call, MAX, call);
+		Name = new char[strlen(name) + 1];
+		Comp = new char[strlen(comp) + 1];
+		Call = new char[strlen(call) + 1];
+		strcpy_s(Name, strlen(name) + 1, name);
+		strcpy_s(Comp, strlen(comp) + 1, comp);
+		strcpy_s(Call, strlen(call) + 1, call);
 	}
 	NameCard(const NameCard &copy) : Grade(copy.Grade) {
 		Name = new char[strlen(copy.Name) + 1];
@@ -46,9 +46,9 @@ public:
 		strcpy_s(Call, strlen(copy.Call) + 1, copy.Call);
 	}
 	void ShowNameCardInfo() const {
-		cout << "ÀÌ¸§: " << Name << endl;
-		cout << "È¸»ç: " << Comp << endl;
-		cout << "ÀüÈ­¹øÈ£: " << Call << endl;
+		cout << "ì´ë¦„: " << Name << endl;
+		cout << "íšŒì‚¬: " << Comp << endl;
+		cout << "ì „í™”ë²ˆí˜¸: " << Call << endl;
 		COMP_POS::ShowGradeInfo(Grade);
 	}
 	~NameCard() {
