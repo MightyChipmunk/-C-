@@ -11,11 +11,11 @@ public:
 		strcpy_s(this->name, strlen(name) + 1, name);
 	}
 	void ShowMyFriendinfo() {
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "Ã€ÃŒÂ¸Â§: " << name << endl;
+		cout << "Â³ÂªÃ€ÃŒ: " << age << endl;
 	}
 	~MyFriendInfo() {
-		delete name;
+		delete []name;
 	}
 };
 
@@ -32,12 +32,12 @@ public:
 	}
 	void ShowMyFriendDetailInfo() {
 		ShowMyFriendinfo();
-		cout << "ÁÖ¼Ò: " << addr << endl;
-		cout << "ÀüÈ­: " << phone << endl << endl;
+		cout << "ÃÃ–Â¼Ã’: " << addr << endl;
+		cout << "Ã€Ã¼ÃˆÂ­: " << phone << endl << endl;
 	}
 	~MyFriendDetailInfo() {
-		delete addr;
-		delete phone;
+		delete []addr;
+		delete []phone;
 	}
 };
 
