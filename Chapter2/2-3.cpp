@@ -15,7 +15,7 @@ int main() {
 	pnt1->ypos = 20;
 	pnt2->xpos = 30;
 	pnt2->ypos = 40;
-	Point &pnt = PntAdder(*pnt1, *pnt2); //PntAdderÀÇ ¹İÈ¯ÀÌ ÂüÁ¶ÀÚÀÎ°Å¿¡ ¸ÂÃç ÂüÁ¶ÀÚ &pnt¼±¾ğ
+	Point &pnt = PntAdder(*pnt1, *pnt2); //PntAdderì˜ ë°˜í™˜ì´ ì°¸ì¡°ìì¸ê±°ì— ë§ì¶° ì°¸ì¡°ì &pntì„ ì–¸
 	cout << pnt.xpos << ' ' << pnt.ypos << endl;
 
 	delete pnt1;
@@ -26,7 +26,7 @@ int main() {
 }
 
 Point& PntAdder(const Point &p1, const Point &p2) {
-	Point *pnt = new Point; //±¸Á¶Ã¼ µ¿ÀûÇÒ´ç
+	Point *pnt = new Point; //êµ¬ì¡°ì²´ ë™ì í• ë‹¹
 	pnt->xpos = p1.xpos + p2.xpos;
 	pnt->ypos = p1.ypos + p2.ypos;
 	return *pnt;
