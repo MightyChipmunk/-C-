@@ -27,9 +27,9 @@ private:
 public:
 	HybridWaterCar(int gas, int elec, int water) : HybridCar(gas, elec), waterGauge(water) {}
 	void ShowCurrentGauge() {
-		cout << "ÀÜ¿© °¡¼Ö¸°: " << GetGasgauge() << endl;
-		cout << "ÀÜ¿© Àü±â·®: " << GetElecGauge() << endl;
-		cout << "ÀÜ¿© ¿öÅÍ·®: " << waterGauge << endl;  
+		cout << "ìž”ì—¬ ê°€ì†”ë¦°: " << GetGasgauge() << endl;
+		cout << "ìž”ì—¬ ì „ê¸°ëŸ‰: " << GetElecGauge() << endl;
+		cout << "ìž”ì—¬ ì›Œí„°ëŸ‰: " << waterGauge << endl;  
 	}
 };
 
