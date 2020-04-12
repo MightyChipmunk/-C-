@@ -78,6 +78,5 @@ int main()
 	else if (pos1 != pos2) {
 		cout << "different" << endl;
 	}
-
 	return 0;
 }
