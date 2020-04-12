@@ -2,10 +2,6 @@
 #include <cstring>
 using namespace std;
 
-#include <iostream>
-#include <cstring>
-using namespace std;
-
 namespace RISK_LEVEL {
 	enum {RISK_A = 3, RISK_B = 2, RISK_C = 1};
 }
