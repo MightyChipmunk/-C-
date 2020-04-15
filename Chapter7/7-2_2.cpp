@@ -13,7 +13,7 @@ public:
 		this->title = new char[tlen];
 		strcpy(this->title, title);
 		
-		int ilen = strlen(title) + 1;
+		int ilen = strlen(isbn) + 1;
 		this->isbn = new char[ilen];
 		strcpy(this->isbn, isbn);
 	}
